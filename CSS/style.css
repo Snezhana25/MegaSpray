@@ -1,0 +1,2480 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #500404;
+}
+
+p{
+	    margin: 0 0 0;
+}
+
+
+.fetch{
+	position: relative;
+	display: table;
+	margin: auto;
+}
+
+.container-fluid{
+	padding: 0;
+}
+
+.header{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.header img{
+	display: table;
+	margin: auto;
+	max-width: 100%;
+	vertical-align: middle;
+	position: relative;
+}
+
+		/* MENU*/
+header{
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 87%;
+	z-index: 999;
+}
+
+		/* Juliet Styles */
+.menu--juliet .menu__item {
+	position: relative;
+	-webkit-transition: color .25s;
+	transition: color .25s;
+	display: inline-block;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.menu--juliet .menu__item::before,
+.menu--juliet .menu__item::after,
+.menu--juliet .menu__item--current::before,
+.menu--juliet .menu__item--current::after {
+	position: absolute;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: solid transparent;
+	content: '';
+	pointer-events: none;
+}
+.menu--juliet .menu__item::before,
+.menu--juliet .menu__item::after {
+	-webkit-transform: scale3d(0, 1, 1);
+	transform: scale3d(0, 1, 1);
+	-webkit-transform-origin: left left;
+	transform-origin: left left;
+	-webkit-transition: transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+	transition: transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.menu--juliet .menu__item--current::before,
+.menu--juliet .menu__item--current::after {
+   	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	-webkit-transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+	transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.menu--juliet .menu__item:hover::before,
+.menu--juliet .menu__item:hover::after {
+   	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	-webkit-transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+	transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+
+.menu--juliet .menu__item::before {
+	top: 95%;
+	margin-left: -9px;
+	border-width: 10px;
+	border-top-color: #500404;
+}
+
+.menu--juliet .menu__item--current::before {
+	margin-left: -9px;
+	border-width: 10px;
+	border-top-color: #d94f5c;
+}
+
+.menu--juliet .menu__item::after,
+.menu--juliet .menu__item--current::after {
+	top: 94%;
+	margin-left: -5px;
+	border-width: 6px;
+	border-top-color: transparent;
+}
+
+.menu--juliet .menu__link {
+	position: relative;
+	margin: 0 2em;
+	padding-right: 0;
+	padding-left: 0;
+	color: #7b4321;
+	-webkit-transition: color 0.4s;
+	transition: color 0.4s;
+}
+
+.menu--juliet .menu__item--current .menu__link,
+.menu--juliet .menu__item--current .menu__link:hover,
+.menu--juliet .menu__item--current .menu__link:focus {
+	color: #d94f5c;
+}
+
+.menu--juliet .menu__item--current .menu__link::after,
+.menu--juliet .menu__item--current .menu__link::before {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+}
+
+.menu--juliet .menu__item--current .menu__link::before {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.menu--juliet .menu__link:hover,
+.menu--juliet .menu__link:focus {
+	color: #7b4321;
+}
+
+.menu--juliet .menu__item:hover .menu__link::before,
+.menu--juliet .menu__item:focus .menu__link::before {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.menu--juliet .menu__link::before,
+.menu--juliet .menu__link::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	-webkit-transform: scale3d(0, 1, 1);
+	transform: scale3d(0, 1, 1);
+	-webkit-transform-origin: center left;
+	transform-origin: center left;
+	-webkit-transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+	transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.menu--juliet .menu__link::before {
+	background: #500404;
+	-webkit-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+
+.menu--juliet .menu__link::after {
+	background: #d94f5c;
+}
+
+		/* End: Juliet Styles */
+
+		/* COUNT WE HAVE SECTON */
+.countWehave{
+	position: relative;
+	float: right;
+	display: flex;
+	text-align: center;
+	color: #500404;
+	width: 33%;
+}
+
+.countWehave p{
+	padding-top: 10px;
+	font-size: 35px;
+}
+
+.blockCount{
+	width: 50%;
+	float: right;
+}
+
+.blockCount p{
+	font-size: 20px;
+	padding-top: 0;
+}
+
+.blockCount span{
+	font-size: 30px;
+    line-height: 26px;
+}
+		/* THE END COUNT WE HAVE SECTON */
+
+		/* COUNT SECTON */
+.count{
+	position: absolute;
+    width: 84%;
+    top: 8%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 4;
+    color: #fff;
+}
+
+.sayYes{
+	font-size: 23px;
+    line-height: 31px;
+    left: 10%;
+}
+	
+
+.sayYes	.forU{
+	font-size: 35px;
+}
+
+.sayYes	span{
+	font-size: 70px;
+	position: relative;
+}
+
+.logo{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -20%;
+	margin: auto;
+	text-align: center;
+	font-size: 26px;
+	text-transform: uppercase;
+	text-shadow: 3px 7px 10px #500404;
+
+}
+
+.logo p{
+	position: relative;
+}
+
+.block-right{
+	float: right;
+	text-align: center;
+}
+
+.block-right p{
+	color: #500404;
+	text-align: left;
+	font-style: normal;
+}
+
+.block-right .itWas{
+	padding-right: 31px;
+}
+
+.cost-header{
+	font-size: 40px;
+}
+
+.clock{
+	width: 56%;
+	display: inline-block;
+	position: relative;
+	text-align: left;
+}
+
+.bg{
+	float: right;
+}
+
+.bg p{
+	color:  #500404;
+}
+
+.title-counter{
+	position: absolute;
+	right: 0;
+	margin:auto;
+	color: #500404;
+}
+
+.title{
+	position: relative;
+	display: inline-block;
+	margin: 1px 11px;
+	font-style: normal;
+}
+
+
+.bg-hour, .bg-min, .bg-sec{
+	display: inline-block;
+	color: #000;
+	font-weight:bold;
+	letter-spacing: 12px;
+	font-size: 33px;
+	text-align: center;
+	padding-left: 7px;		
+}
+
+.bg-hour{
+	background: url('../images/sprite.png');
+	width: 66px;
+	height: 40px;
+	background-repeat: repeat-y;
+	background-position-x: 0px;
+    background-position-y: 297px;
+}
+
+.bg-min{
+	background: url('../images/sprite.png');
+	width: 66px;
+	height: 40px;
+	background-repeat: repeat-y;
+	background-position-x: 0px;
+    background-position-y: 297px;
+}
+
+.bg-sec{
+	background: url('../images/sprite.png');
+	width: 66px;
+	height: 40px;
+	background-repeat: repeat-y;
+	background-position-x: 0px;
+    background-position-y: 297px;
+}
+
+
+		/* THE END COUNT SECTON */
+
+		/* SPECIFICATION SECTON */
+
+.block-title{
+	position: absolute;
+    right: 0;
+    left: 0;
+    top: 20%;
+    margin: auto;
+    width: 100%;
+    z-index: 10;
+    font-size: 20px;
+}
+
+.specification .interes-block:nth-child(1){
+    padding-left: 0;
+}
+
+.specification .interes-block:nth-child(2){
+	padding-top: 32px;
+    margin-left: 94px;
+    width: 50%;
+}
+
+.specification .interes-block:nth-child(3){
+	padding-top: 36px;
+    margin-left: 187px;
+    width: 50%;
+}
+
+.specification .interes-block:nth-child(4){
+	padding-top: 74px;
+    margin-left: 180px;
+    color: #fff;
+    width: 50%;
+    font-style: normal;
+}
+
+.specification{
+	position: relative;
+	float: right;
+	line-height: 25px;
+	color: #500404;
+}	
+		/* THE END SPECIFICATION SECTON */
+		/*  SECTON POPULAR */
+.popular{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.h1{
+	display: table;
+	margin: auto;
+	margin-top: 88px;
+    width: 50%;
+    text-align: center;
+    color: #500404;
+}
+
+.result-effect{
+	display: table;
+	margin: auto;
+	text-align: center;
+
+}
+
+.result-effect .effect:nth-child(1){
+	margin-left: 70px;
+}
+
+.effect{
+	margin: 154px 28px 0;
+    padding: 0;
+    color: #500404;
+}	
+
+.txt{
+	display: table;
+    margin: auto;
+    padding: 55px 30px 30px 30px;
+    width: 80%;
+    color: #500404;
+    font-style: italic;
+    font-weight: 600;
+}
+
+		/* THE END SECTON POPULAR */
+
+		/*  SECTON COMPOSITION */
+.composition{
+	font-size: 12px;
+	display: inline-block;
+	width: 100%;
+	color: #500404;
+}
+
+.leftComposition{
+	padding-top: 44px;
+	padding-left: 85px;
+}
+
+.rightComposition{
+	float: right;
+	padding-top: 44px;
+	padding-right: 85px;
+}
+
+.rightComposition p, .leftComposition p {
+    padding-top: 10px;
+}
+
+.leftComposition .item, .rightComposition .item{
+	padding-top: 15px;
+
+}
+
+.leftComposition .item h4, .rightComposition .item h4{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.leftComposition .item:nth-child(3) h4{
+	padding-right: 15px;
+}
+
+// .leftComposition, .rightComposition .item:nth-child(1){
+// 	padding-top: 0;
+// }
+
+.rightComposition .item:nth-child(3) h4{
+	padding-left: 80px;
+}
+
+.rightComposition .item:nth-child(2) h4{
+	padding-left: 10px;
+}
+
+.rightComposition .item:nth-child(1) h4{
+	margin-left: -50px;
+}
+
+.rightComposition .item:nth-child(3) p{
+	padding-top: 10px;
+}
+
+
+.item-center{
+	bottom: 2%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.item-center h4{
+	text-align: right;
+
+}
+
+		/* THE END SECTON COMPOSITION */
+		
+
+
+		/*PROGRESS-BAR SECTION*/ 
+.progressBar__description{
+	width: 80%;
+	text-align: center;
+	margin:auto;
+	color: #fff;
+	padding-top: 59px;
+	font-size: 14px;
+	position: relative;
+	font-size: 25px;
+	font-style: normal;
+}
+
+.bar{
+	font-weight: 300;
+}
+
+.colortext{
+	color: #febe10;
+}	
+
+.progressBar__share{
+	position: relative;
+	display: table;
+	margin: 0 auto;
+}
+
+.wrap-progress{
+	display: inline-block;
+	position: relative;
+	text-align: center;
+}		
+.progressBar__share .progress90, .progress95, .progress97{
+	background: url('../images/sprite.png')no-repeat;
+	display: table;
+	margin: auto;
+	width: 238px;
+    height: 254px;
+    background-position-y: -110px;
+    position: relative;
+    padding: 0;
+    -moz-transition: all 0.8s ease-in-out; 
+  	-webkit-transition: all 0.8s ease-in-out; 
+  	-o-transition: all 0.8s ease-in-out; 
+  	-ms-transition: all 0.8s ease-in-out; 
+  	transition: all 0.8s ease-in-out;
+}
+
+.progressBar__share .progress95{
+	background-position-x: -247px;
+}
+
+.progress95:hover{
+	-moz-transform: rotate(360deg); 
+	-webkit-transform: rotate(360deg); 
+	-o-transform: rotate(360deg); 
+	-ms-transform: rotate(360deg); 
+	transform: rotate(360deg);
+	
+}
+
+.progress97:hover{
+	-moz-transform: rotate(360deg); 
+	-webkit-transform: rotate(360deg); 
+	-o-transform: rotate(360deg); 
+	-ms-transform: rotate(360deg); 
+	transform: rotate(360deg);
+	
+}
+
+.progress90:hover{
+	-moz-transform: rotate(360deg); 
+	-webkit-transform: rotate(360deg); 
+	-o-transform: rotate(360deg); 
+	-ms-transform: rotate(360deg); 
+	transform: rotate(360deg);
+	
+}
+
+.progressBar__share .progress97{
+	background-position-x: -494px;
+}
+
+.progressBar__share h4{
+	text-align: center;
+	color: #febe10;
+	text-transform: uppercase;
+	display: table;
+	margin: auto;
+	width: 71%;
+	padding-top: 73px;
+}	
+
+.procent{
+	font-size: 70px;
+	color: #500404;
+	display: block;
+	position: absolute;
+	right: 0;
+	left:0;
+	top: 45%;
+	z-index: 3;
+}
+
+.check-bottom{
+	display: table;
+	margin: auto;
+	padding-top: 16px;
+}
+
+.check1, .check2{
+    position: relative;
+    padding: 4px;
+    color: #febe10;
+}
+
+.check1 span{
+	background: url('../images/sprite.png')no-repeat;
+	width: 57px;
+    height: 55px;
+	background-position-y: -71px;
+    background-position-x: -75px;
+    position: absolute;
+    left:-35%;
+    top: -64%;
+}
+
+.check2 span{
+	background: url('../images/sprite.png')no-repeat;
+	width: 57px;
+    height: 55px;
+	background-position-y: -71px;
+    background-position-x: -75px;
+    position: absolute;
+    left:-35%;
+    top:-31%;
+}
+		/* THE END PROGRESS-BAR SECTION*/ 
+
+		/* SECTION INSTRUCTION HOW TO USE*/
+.instructions{ 
+	clear: both;
+	width: 100%;
+	position: relative;
+}	
+
+.instructions img{
+	max-width: 100%;
+	vertical-align: middle;
+	display: table;
+	margin: auto;
+}
+
+.information{
+	position: absolute;
+	top: 4%;
+	right: 9%;
+	font-size: 25px;
+	text-align: center;
+	color: #500404;
+	font-style: normal;
+}
+
+.howtouse{
+	position: absolute;
+    top: 17%;
+    left: -21%;
+    right: 0;
+    margin: auto;
+    width: 44%;
+    font-size: 22px;
+    color: #500404;
+}
+
+.definition{
+	position: relative;
+	font-weight: 500;
+}
+
+.team{
+	position: absolute;
+    top: 26%;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+}
+
+.instance.col-md-3 {
+    margin-left: 8%;
+    position: relative;
+    padding-top: 11px;
+    color: #500404;
+}
+
+.team .instance:nth-child(3){
+	margin-left: 9%;
+}
+
+.team .instance:nth-child(2){
+	margin-left: 13%;
+}
+
+
+.team .instance:nth-child(1){
+	margin-left: 1%;
+}
+
+.information span{
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.information p{
+	position: relative;
+	font-weight: 300;
+}
+
+.wow{
+	position: absolute;
+    top: 32%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    font-size: 25px;
+    color: #500404;
+    font-weight: 600;    
+}
+
+.wow-center{
+	position: relative;
+	display: table;
+	margin: auto;
+}
+
+.wow .wow-center:nth-child(1){
+	text-align: right;
+	
+}
+
+.wow .wow-center:nth-child(2){
+	float: right;
+	text-align: left;
+	padding-left: 67px;
+}
+
+.node{
+	position: absolute;
+	top:39%;
+	color: #fff;
+	width: 50%;
+	left:0;
+	right: 0;
+	margin: auto;
+}
+
+.node-txt{
+	position: relative;
+    width: 65%;
+    display: table;
+    margin: auto;
+    padding-left: 45px;
+    font-style: normal;
+    
+}
+
+.attention {
+   	position: absolute;
+    bottom: 40%;
+    width: 50%;
+    left: -29%;
+    right: 0;
+    margin: auto;
+    font-size: 16px;
+    color: #fff;
+}	
+
+.attention p{
+	position: relative;
+    width: 87%;
+    margin-left: 18%;
+    font-style: normal;
+}
+
+.recommend{
+	position: absolute;
+    bottom: 35%;
+    width: 80%;
+    left: 13%;
+    right: 0;
+    margin: auto;
+    font-size: 30px;
+    color: #500404;
+}
+
+.briefing{
+	position: absolute;
+    bottom: 31%;
+    width: 30%;
+    right: 13%;
+    margin: auto;
+    color: #fff;
+}
+
+.bl{
+	position: relative;
+}
+
+.briefing4 span, .briefing3 span{
+	background: url(../images/list.png) no-repeat;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    left: -2%;
+}
+
+.briefing span, .briefing2 span{
+	background: url(../images/list.png) no-repeat;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    left: -9%;
+}
+
+.briefing2{
+	position: absolute;
+    bottom: 26%;
+    width: 30%;
+    right: 13%;
+    margin: auto;
+    color: #fff;
+}
+
+.briefing3{
+	position: absolute;
+    bottom: 21%;
+    width: 70%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    color: #fff;
+}
+
+.briefing4{
+	position: absolute;
+    bottom: 18%;
+    width: 70%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    color: #fff;
+}
+		/* THE END SECTION INSTRUCTION HOW TO USE*/
+
+		/*SECTION WITH QUALITY CERTIFICATE*/ 
+
+.certificate{  
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.best-megaspray{
+	clear: both;
+	width: 100%;
+	padding: 0;
+	text-align: center;
+	
+}
+
+.best-megaspray img{
+	max-width: 100%;
+	vertical-align: middle;
+	position: relative;
+	margin-top: -289px;
+}
+.about-megaspray{
+	position: absolute;
+	top:-34%;
+	left: 0;
+	right: 0;
+	width: 63%;
+	margin: auto;
+	color: #fff;
+	font-style: normal;
+}
+
+.about-megaspray h1{
+	width: 36%;
+}
+
+.about-megaspray p{
+	width: 50%;
+    float: right;
+    margin-top: -82px;
+}
+
+.cosmetics-certificate{
+	position: absolute;
+    top: 20%;
+    width: 70%;
+    left: 14%;
+    right: 0;
+    margin: auto;
+    color: #fff;
+}
+
+.product{
+	position: relative;
+	padding-left: 20px;
+}
+
+.original{
+	position: absolute;
+	top: 37%;
+    left: 9%;
+    right: 0;
+    margin: auto;
+    color: #500404;
+    font-size: 20px;
+}
+
+.product-origin{
+	position: relative;
+	width: 50%;
+	font-style: normal;
+
+}
+
+.product-origin span{
+	font-weight: 600;    
+}
+
+.buyoriginal {
+    position: absolute;
+    bottom: 35%;
+    right: 0;
+    margin: auto;
+    color: #500404;
+    font-size: 18px;   
+}
+
+.buyoriginal p {
+    width: 61%;
+    position: relative;
+    float: right;
+    margin-right: 11%;
+    font-weight: 600; 
+    font-style: italic;  
+}
+
+.buyoriginal span {
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 600;    
+}
+
+.best{
+	position: absolute;
+	bottom: 16%;
+	margin:auto;
+}
+
+.best p{
+	width: 50%;
+	position: relative;
+	float: right;
+	color: #ffd200;
+	font-style: italic;
+	font-size: 15px;
+}
+
+.newinfo{
+	position: absolute;
+    bottom: 16%;
+    margin: auto;
+    right: 0;
+    width: 100%;
+    font-size: 25px;
+    color: #ffd200;
+}
+
+.newinfo span{
+	position: relative;
+    width: 60%;
+    float: right;
+    text-transform: uppercase;
+}
+		/*THE END SECTION WITH QUALITY CERTIFICATE*/ 
+
+		/*SECTION RESULT*/
+.conContent{
+	display: table;
+	margin: auto;
+	width: 80%;
+	position: relative;
+	text-align: center;
+}
+
+.result {
+    margin-top: -124px;
+}
+
+.lucky-people span{
+	background: url('../images/list.png') left no-repeat;
+	padding-right: 40px;
+	width: 25px;
+	height: 24px;
+	display: inline-block;
+}
+
+.lucky-people img{
+	max-width: 100%;
+}
+
+.lucky-people h4{
+	width: 71%;
+	display: table;
+	margin: auto;
+	color: #fff;
+	padding-bottom: 16px;
+}
+
+.lucky-people p{
+	color:#fff;
+}
+
+.stock	{
+	display: inline-block;
+	width: 100%;
+	margin-top: 60px;
+	margin-bottom: 37px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	line-height: 2;
+}
+
+.stock p{
+	display: table;
+	margin: auto;
+	width: 83%;
+}
+.text-up{
+	text-transform: uppercase;
+}
+.sale{
+	color: red;
+}
+
+		/*SECTION WITH FORM*/ 
+
+.buyNow{
+	width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.buyNow .number{
+	position: absolute;
+    color: #000;
+    left: 0;
+    right: 22%;
+    margin: auto;
+    top: 84%;
+    width: 7%;
+}
+
+.buyNow .number span{
+	position: relative;
+    display: table;
+    margin: auto;
+    font-size: 30px;
+}
+
+.buyNow img{
+	width: 100%;
+	display: table;
+	margin: auto;
+}
+
+.form {
+    position: absolute;
+    right: -45%;
+    left: 0;
+    top: 8%;
+    margin: auto;
+    color: #000;
+    font-size: 15px;
+    width: 40%;
+    
+}
+
+
+form{
+	width: 90%;
+	margin: auto;
+}
+
+.form input{
+	width: 100%;
+	display: block;
+	margin-bottom: 8px;
+	border-radius: 8px;
+    border: 2px solid #fbbc0d;
+    padding: 6px 13px;
+}
+
+input:focus, textarea:focus, keygen:focus, select:focus {
+	outline: none;
+	box-shadow: 0 0 3px 2px #fb2c00;
+   	padding: 10px 10px;
+}
+
+input::-webkit-input-placeholder {
+	color:#747474;
+	font-size: 15px;
+}
+input::-moz-placeholder          {
+	color:#747474;
+	font-size: 15px;
+}
+input:-moz-placeholder           {
+	color:#747474;
+	font-size: 15px;
+}
+input:-ms-input-placeholder {
+	color:#747474;
+	font-size: 15px;
+}
+
+.price{
+	color: #fff;
+	font-size: 25px;
+	width: 90%;
+    margin-top: 23px;
+    display: table;
+    margin: auto;
+}
+
+.itWas{
+	color: #cc0000;
+	text-shadow: 2px 0px 3px #fff;
+	padding-right: 37px;
+	font-size: 30px;
+}
+.price span{
+	float: right;
+	padding-left: 8px;
+}
+
+.cost{
+	clear: both;
+	font-size: 30px;
+}
+
+.cost span{
+	font-size: 40px;
+}
+
+.button {
+    background: url(../images/button-form.png)no-repeat;
+    width: 491px;
+    height: 140px;
+    margin-top: 10px;
+    margin-left: 4px;
+    background-position-x: -14px;
+    background-position-y: -126px;
+    border: none;
+    background-size: cover;
+}
+
+.button:active{
+	background-position-y: 4px;
+}
+
+button:focus{
+	outline: none;
+}
+
+		/*THE END SECTION WITH FORM*/
+
+		/* SECTION FOOTER*/  
+
+ footer{
+ 	width: 100%;
+ 	text-align: center;
+ 	color: #fff;
+ 	
+}
+
+.foo-text{
+ 	width: 80%;
+ 	margin: auto;
+ 	display: inline-block;
+ 	margin: 137px 0 37px 0;
+}
+
+.foo-text p{
+	padding-bottom: 33px;
+}
+		/* THE END SECTION FOOTER*/ 
+
+@media screen and (max-width: 1200px) {
+	.attention p{
+		margin-left: 20%;
+	}
+
+	.button {
+	    width: 500px;
+	    height: 130px;
+	    margin-left: -27px;
+	    background-position-x: 10px;
+	    background-position-y: -134px;
+	    margin-top: 20px;
+	}
+
+}
+
+@media screen and (max-width: 1024px) {
+	.menu--juliet .menu__link {
+    	margin: 0px 1em;
+    }
+
+    .countWehave p {
+    	font-size: 30px;
+	}
+
+	.blockCount p{
+		font-size: 20px;
+	}
+	.count{
+		width: 100%;
+	}
+
+	.sayYes {
+    	left: 14%;
+	}
+
+	.block-right{
+		padding-left: 0;
+	}
+
+	.specification .interes-block:nth-child(2) {
+	    padding-top: 2px;
+    	width: 50%;
+	}
+
+	.specification .interes-block:nth-child(3) {
+	    margin-left: 166px;
+	}
+
+	.specification .interes-block:nth-child(4) {
+    	padding-top: 12px;
+    	margin-left: 154px;
+	}
+
+	.h1 {
+	    
+	    margin-top: 41px;
+	}
+
+	.logo{
+		bottom: 0;
+	}
+
+	.txt {
+	    padding: 25px 30px 17px 30px;
+	}
+
+	.leftComposition, .rightComposition{
+	    padding-top: 0px;
+	}
+
+	.leftComposition .item, .rightComposition .item{
+		padding-top: 0px;
+	}
+
+	.leftComposition .item h4, .rightComposition .item h4{
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+
+	.item-center {
+    	bottom: 2%;
+    	
+	}
+
+	.effect {
+    	margin: 151px 21px 0;
+	}
+
+	.information span {
+    	font-size: 25px;
+	}
+
+	.information{
+		font-size: 20px;
+	}
+
+	.information{
+		font-size: 19px;
+	}
+
+	.wow{
+		top: 33%;
+		font-size: 23px;
+	}
+
+	.wow .wow-center:nth-child(2) {
+    	padding-left: 56px;
+	}
+
+	.wow .wow-center:nth-child(1) {
+    	padding-right: 27px;
+	}
+
+	.node{
+		font-size: 12px;
+	}
+
+	.attention{
+		font-size: 14px;
+	}
+
+	.briefing, .briefing2, .briefing3, .briefing4{
+		font-size: 13px;
+	}
+
+	.briefing{
+		bottom: 29%;
+	}
+
+	.briefing2{
+		bottom: 23%;
+	}
+
+	.briefing3{
+		bottom: 20%;
+	}
+
+	.briefing4{
+		bottom: 17%;
+	}
+
+	.about-megaspray{
+		width: 80%;
+	}
+
+	.about-megaspray h1 {
+	    width: 38%;
+	}
+
+	.about-megaspray p {
+    	width: 56%;
+    }
+
+    .cosmetics-certificate{
+    	top: 15%;
+    }
+
+    .original{
+    	top: 34%;
+    }
+
+    .newinfo{
+    	bottom: 15%;
+    	width: 90%;
+    }
+
+    .result {
+    	margin-top: -92px;
+	}
+
+	.conContent{
+		width: 100%;
+	}
+
+	.lucky-people h4{
+		width: 68%;
+	}
+
+	.button {
+	    width: 468px;
+	    height: 130px;
+	    margin-left: -27px;
+	    background-position-x: -11px;
+	    background-position-y: -120px;
+	    margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 922px) {
+
+	.section--menu{
+		font-size: 10px;
+	}
+
+	.clock {
+    	width: 68%;
+    }
+
+	.countWehave p {
+	    font-size: 20px;
+	}
+
+	.sayYes {
+	    font-size: 19px;
+	    line-height: 28px;
+	}
+
+	.sayYes	.forU {
+    	font-size: 24px;
+    }
+
+    .sayYes	span{
+    	font-size: 50px;
+    }
+
+    .logo {
+	    bottom: 12%;
+	    font-size: 17px;
+	}
+
+	.itWas {
+	    padding-right: 14px;
+	    font-size: 18px;
+	}
+
+	.cost-header {
+	    font-size: 30px;
+	}
+
+	.block-right .itWas {
+	    padding-right: 20px;
+	}
+
+	.block-right {
+	    margin-right: 0px;
+	    text-align: left;
+	}
+
+	.block-title{
+		top: 20%;
+		font-size: 14px;
+	} 
+
+	.specification .interes-block:nth-child(2) {
+    	padding-top: 24px;
+    	margin-left: 66px;
+	}
+
+	.specification .interes-block:nth-child(3) {
+	    margin-left: 122px;
+	    padding-top: 12px;
+	}
+
+	.specification .interes-block:nth-child(4) {
+	    margin-left: 122px;
+	}
+
+	.composition {
+    	font-size: 10px;
+	}
+
+	.h1 {
+	    width: 80%;
+	}
+
+	.effect {
+	    margin: 104px 21px 0;
+	}
+
+	.leftComposition {
+	    padding-left: 16px;
+	}
+
+	.rightComposition {
+	    padding-right: 10px;
+	}
+
+	.leftComposition .item h4, .rightComposition .item h4 {
+	    font-size: 12px;
+	}
+
+	.leftComposition .item, .rightComposition .item {
+	    padding-top: 3px;
+	}
+
+	.rightComposition p, .leftComposition p {
+	    padding-top: 5px;
+	}
+
+	.rightComposition .item:nth-child(3) p {
+	    padding-top: 10px;
+	    padding-left: 59px;
+	}
+
+	.item-center {
+	    bottom: 0%;
+	}
+
+	.item-center h4{
+		font-size: 12px;
+	}
+
+	.procent{
+		margin-left: 39px;
+	}
+
+	.information {
+	    font-size: 17px;
+	}
+
+	.information span {
+	    font-size: 19px;
+	}
+
+	.howtouse{
+		font-size: 14px;
+	}
+
+	.team{
+		width: 75%;
+		margin-right: 72px;
+	}
+
+	.instance.col-md-3{
+		padding-top: 0;
+		margin-left: 0;
+	}
+
+	.team .instance:nth-child(1) {
+	    margin-left: -2%;
+	}
+
+	.team .instance:nth-child(2) {
+	    margin-left: 10px;
+	}
+
+	.team .instance:nth-child(3) {
+	    margin-left: -10px;
+	}
+
+	.wow {
+	    top: 34%;
+	    font-size: 15px;
+	}
+
+	.wow .wow-center:nth-child(2) {
+	    padding-left: 51px;
+	}
+
+	.node-txt{
+		width: 80%;
+	}
+
+	.node {
+	    font-size: 10px;
+	}
+
+	.node-txt{
+		padding-left: 37px;
+		padding-right: 14px;
+	}
+
+	.attention {
+	    font-size: 11px;
+	}
+
+	.briefing, .briefing2, .briefing3, .briefing4 {
+	    font-size: 10px;
+	}
+
+	.best-megaspray img {
+	    margin-top: -152px;
+	}
+
+	.recommend{
+		font-size: 27px;
+	}
+
+	.briefing span, .briefing2 span {
+	    left: -12%;
+	}
+
+	.cosmetics-certificate {
+	    top: 21%;
+	}
+
+	.original {
+	    top: 40%;
+	    font-size: 15px;
+	}
+
+	.buyoriginal p{
+		margin-right: 5%;
+		font-size: 14px;
+	}
+
+	.best p{
+		float: none;
+		margin-left: 31%;
+	}
+
+	.newinfo{
+		font-size: 16px;
+		bottom: 19%;
+	}
+
+	.result {
+	    margin-top: -45px;
+	}
+
+	.lucky-people{
+		margin-top: 10px;
+	    width: 100%;
+	}
+
+	.lucky-people h4{
+	    font-size: 20px;
+	}
+
+	.lucky-people p {
+		font-size: 18px;
+	}
+
+	.cost span {
+	    font-size: 24px;
+	}
+	.button {
+	    width: 345px;
+	    height: 89px;
+	    margin-left: -27px;
+	    background-position-x: 6px;
+	    background-position-y: -94px;
+	    margin-top: 6px;
+	}
+
+	.buyNow .number {
+		top: 80%;
+	}
+
+
+}
+
+@media screen and (max-width: 768px){
+	.result-effect .effect:nth-child(1) {
+	    margin-left: 33px;
+	}
+
+	.txt {
+	    padding: 38px 30px 17px 30px;
+	}
+
+	.clock {
+    	width: 67%;
+	}
+
+	.node-txt {
+    	padding-left: 51px;
+	}
+
+	.attention p {
+	    margin-left: 23%;
+	}
+}
+
+@media screen and (max-width: 600px){
+	header{
+		width: 95%;
+	}
+
+	.section--menu{
+		margin-top: 14px !important;
+	}
+
+	.countWehave{
+		width: 40%;
+		margin-right: -33px;
+	}
+
+	.countWehave p {
+	    font-size: 15px;
+	}
+
+	.blockCount span {
+	    font-size: 24px;
+	    line-height: 9px;
+	}
+
+	.sayYes {
+	    left: 12%;
+	}
+
+	.sayYes {
+	    font-size: 14px;
+	    line-height: 20px;
+	}
+
+	.sayYes	.forU {
+	    font-size: 20px;
+	}
+
+	.logo {
+	    bottom: 63%;
+	    font-size: 15px;
+	}
+
+	.cost-header {
+		font-size: 21px;
+	}
+
+	.bg-hour, .bg-min, .bg-sec {
+	    letter-spacing: 11px;
+	    font-size: 27px;
+	    padding-left: 2px;
+	}
+
+	.block-right {
+	    margin-right: 0px;
+	    text-align: left;
+	    margin-top: -23px;
+	}
+
+	.clock{
+		width: 65%;
+	}
+
+	.logo {
+	    bottom: 17%;
+	}
+
+	.sayYes	span {
+	    font-size: 34px;
+	}
+
+	.specification {
+	    line-height: 16px;
+	    font-size: 10px;
+	    padding-left: 1px;
+	}
+
+	.specification .interes-block:nth-child(2) {
+	    padding-top: 4px;
+	    margin-left: 59px;
+	}
+
+	.specification .interes-block:nth-child(3) {
+	    margin-left: 92px;
+	    padding-top: 22px;
+	}
+
+	.specification .interes-block:nth-child(4) {
+	    margin-left: 95px;
+	    margin-top: 9px;
+	}
+
+	.title {
+	    margin: 0px 9px;
+	}
+
+	.h1 {
+	    font-size: 21px;
+	}
+
+	.result-effect .effect:nth-child(1) {
+	    margin-left: 40px;
+	}
+
+	.effect {
+	    margin: 71px 10px 0;
+    	font-size: 15px;
+	}
+
+	.txt {
+	    padding: 21px 30px 17px 30px;
+	    width: 90%;
+	    line-height: 1;
+	    font-size: 12px;
+	}
+
+	.leftComposition, .rightComposition{
+		font-size: 8px;
+	}
+
+	.leftComposition .item h4, .rightComposition .item h4{
+		font-size: 10px;
+	}
+
+	.rightComposition .item:nth-child(3) p {
+	    padding-top: 5px;
+	    padding-left: 34px;
+	}
+
+	.rightComposition .item:nth-child(3) h4 {
+	   padding-left: 34px;
+	}
+
+	.item-center {
+	   bottom: -5%;
+	   font-size: 8px;
+	   left: 4%;
+	}
+
+	.rightComposition p, .leftComposition p {
+	    padding-top: 0;
+	}
+
+	.leftComposition .item, .rightComposition .item {
+    	 padding-top: 13px;
+	}
+
+	.wrap-progress{
+		display: block;
+	}
+
+	.information{
+		font-size: 14px;
+		top:3%;
+	}
+
+	.information span {
+	    font-size: 14px;
+	    font-weight: 400;
+	}
+
+	.howtouse {
+	    font-size: 10px;
+	}
+
+	.team {
+	    width: 80%;
+	    margin-right: 29px;
+	    font-size: 10px;
+	}
+
+	.team .instance:nth-child(2) {
+	    margin-left: -12px;
+	}
+
+	.team .instance:nth-child(3) {
+	    margin-left: -27px;
+	}
+
+	.wow, .product-origin, .buyoriginal p {
+	    font-size: 12px;
+	}
+
+	.wow .wow-center:nth-child(2) {
+	    padding-left: 40px;
+	}
+
+	.node-txt {
+	    padding-left: 31px;
+	    padding-right: 0;
+	    font-size: 7px;
+	}
+
+	.attention {
+	    font-size: 8px;
+	}
+
+	.attention p {
+	    margin-left: 25%;
+	}
+
+	.recommend {
+	    font-size: 20px;
+	    bottom: 34%;
+	}
+
+	.briefing, .briefing2, .briefing3, .briefing4 {
+	    font-size: 7px;
+	}
+
+	.about-megaspray p {
+	    margin-top: -69px;
+	}
+
+	.about-megaspray {
+	    width: 80%;
+	    font-size: 10px;
+	    top: -29%;
+	}
+
+	.best-megaspray img {
+	    margin-top: -94px;
+	}
+
+	.cosmetics-certificate {
+	    top: 24%;
+	    font-size: 11px;
+	}
+
+	.product{
+		padding-left: 0;
+	}
+
+	.buyoriginal span {
+	    font-size: 25px;
+	}
+
+	.best {
+	    bottom: 12%;
+	}
+
+	.best p {
+	    margin-left: 28%;
+	    font-size: 12px;
+	}
+
+	.newinfo {
+	    bottom: 10%;
+	}
+
+	.lucky-people span {
+    	padding-right: 13px;
+    }
+
+    .stock{
+    	font-size: 14px;
+    }
+
+    .price, .cost {
+	    font-size: 18px;
+	}
+
+	input::-webkit-input-placeholder {
+		font-size: 10px;
+	}
+	input::-moz-placeholder          {
+		font-size: 10px;
+	}
+	input:-moz-placeholder           {
+		font-size: 10px;
+	}
+	input:-ms-input-placeholder {
+		font-size: 10px;
+	}
+
+	.form input {
+	    padding: 2px 8px;
+	}
+
+	.button {
+    	margin-left: -66px;
+    }
+
+}
+
+@media screen and (max-width: 498px){
+	.sayYes {
+	    font-size: 11px;
+	    line-height: 15px;
+	}
+
+	.cost-header {
+	    font-size: 17px;
+	}
+
+	.block-right .itWas {
+	    padding-right: 7px;
+	    font-size: 16px;
+	}
+
+	.logo {
+	    bottom: 45%;
+	    font-size: 8px;
+	}
+
+	.menu--juliet .menu__item{
+		font-size: 8px;
+	}
+
+	.menu--juliet .menu__item::before {
+	    margin-left: -5px;
+	    border-width: 5px;
+	}
+	
+	.section--menu {
+	    margin-top: 6px !important;
+	}
+
+	.h1 {
+	    font-size: 12px;
+	}
+
+	.effect {
+	    margin: 76px 12px 0;
+	    font-size: 10px;
+	}
+
+	.txt {
+	    padding: 19px 0px 9px 1px;
+	    font-size: 10px;
+	}
+
+	.result-effect .effect:nth-child(1) {
+	    margin-left: 29px;
+	} 
+
+	.leftComposition .item h4, .rightComposition .item h4, .item-center h4 {
+	    font-size: 11px;
+	} 
+
+	.leftComposition, .rightComposition, .item-center {
+	    font-size: 6px;
+	}
+
+	.rightComposition .item:nth-child(3) p {
+	    padding-top: 0px;
+	    padding-left: 21px;
+	}
+
+	.rightComposition .item:nth-child(3) h4 {
+	    padding-left: 21px;
+	}
+
+	.rightComposition .item:nth-child(2) h4 {
+	    padding-left: 0px;
+	}
+
+	.rightComposition .item:nth-child(1) h4 {
+	    margin-left: 0px;
+	}
+
+	.item-center {
+	    bottom: 1%;
+	}
+
+	.countWehave p {
+	    font-size: 11px;
+	}
+
+	.block-right{
+		margin-top: 0;
+	}
+
+	.count{
+		top:7%;
+	}
+
+	.clock {
+	    width: 60%;
+	    position: absolute;
+	    font-size: 10px;
+	    top:48%;
+	}
+
+	.bg{
+		float: right;
+	}
+
+	.information {
+	    font-size: 10px;
+	    top: 5%;
+	}
+
+	.information span {
+    	font-size: 11px;
+	}
+
+	.howtouse {
+	    font-size: 9px;
+	}
+
+	.team {
+	    margin-right: 18px;
+	    font-size: 7px;
+	}
+
+	.wow, .product-origin, .buyoriginal p {
+	    font-size: 9px;
+	}
+
+	.node-txt {
+		padding-left: 26px;
+	    font-size: 6px;
+	}
+
+	.attention {
+	    font-size: 6px;
+	}
+
+	.recommend {
+	    font-size: 13px;
+	    bottom: 35%;
+	    left: -22%;
+	    width: 40%;
+	}
+
+	.briefing span, .briefing2 span {
+	    left: -19%;
+	}
+
+	.briefing {
+	    bottom: 31%;
+	}
+
+	.briefing2 {
+	    bottom: 25%;
+	}
+
+	.briefing3 {
+	    bottom: 22%;
+	}
+
+	.briefing4 {
+	    bottom: 19%;
+	}
+
+	.briefing, .briefing2, .briefing3, .briefing4 {
+	    font-size: 6px;
+	}
+
+	.about-megaspray h1 {
+	    font-size: 14px;
+	}
+
+	.about-megaspray p {
+	    margin-top: -42px;
+	    font-size: 9px;
+	}
+
+	.cosmetics-certificate {
+    	top: 23%;
+    }
+
+    .product {
+	    font-size: 8px;
+	}
+
+
+	.buyoriginal span {
+	    font-size: 12px;
+	}
+
+	.newinfo {
+	    bottom: 11%;
+	    font-size: 12px;
+	}
+
+	.result {
+	    margin-top: -26px;
+	}
+
+	.lucky-people{
+	    display: table;
+	    margin: auto;
+	    width: 100%;
+	}
+
+	.lucky-people h4, .lucky-people p {
+	    font-size: 20px;
+	}
+
+	.lucky-people h4{
+		margin-top: 35px;
+	}
+
+	.price, .cost {
+	    font-size: 14px;
+	}
+
+	.itWas {
+	    font-size: 15px;
+	}
+
+	.button {
+	    width: 290px;
+	    height: 83px;
+	    margin-left: -70px;
+	    background-position-x: 17px;
+	    background-position-y: -79px;
+	    margin-top: 0px;
+	}
+
+	.specification {
+	    line-height: 13px;
+	    font-size: 8px;
+	}
+
+	.specification .interes-block:nth-child(2) {
+	    margin-left: 48px;
+	}
+
+	.specification .interes-block:nth-child(3) {
+	    margin-left: 76px;
+	    padding-top: 18px;
+	}
+
+	.specification .interes-block:nth-child(4) {
+    	margin-left: 77px;
+	}
+
+	.buyNow .number {
+	    top: 77%;
+	}
+
+}
+
+@media screen and (max-width: 320px) {
+	.menu--juliet .menu__item {
+	    font-size: 5px;
+	}
+
+	.section--menu {
+	    margin-top: -1px !important;
+	}
+
+	.sayYes {
+	    left: 10%;
+	    font-size: 8px;
+    	line-height: 11px;
+	}
+
+	.logo {
+	    bottom: 57%;
+	    font-size: 7px;
+	}
+
+	.clock {
+	    width: 80%;
+	    position: absolute;
+	    font-size: 10px;
+	    top: 100%;
+	    left: 0;
+	}
+
+	.bg {
+	    float: left;
+	    margin-top: 42px;
+	    margin-left: 9px;
+	}
+
+	.specification {
+	    line-height: 7px;
+	    font-size: 5px;
+	}
+
+	.specification .interes-block:nth-child(3) {
+	    margin-left: 50px;
+	    padding-top: 13px;
+	}
+
+	.specification .interes-block:nth-child(4) {
+	    margin-left: 72px;
+	    margin-top: 0;
+	}
+
+	.h1 {
+    	font-size: 7px;
+	}
+
+	.result-effect .effect:nth-child(1) {
+	    margin-left: 15px;
+	}
+
+	.effect {
+	    margin: 40px 8px 0;
+	    font-size: 6px;
+	}
+
+	.txt {
+	    padding: 17px 0px 4px 1px;
+	    font-size: 6px;
+	}
+	.countWehave {
+	    width: 40%;
+	    margin-right: -15px;
+	}
+
+	.countWehave p {
+	    font-size: 7px;
+	    padding-top: 5px;
+
+	}
+
+	.blockCount span {
+	    font-size: 14px;
+	}
+
+	.blockCount p{
+		padding-top: 0;
+		font-size: 7px;
+	}
+
+	.leftComposition{
+		padding-left: 0;
+	}
+
+	.rightComposition {
+    	padding-right: 0px;
+	}
+
+	.composition{
+		margin-top: 5px;
+	}
+
+	.leftComposition, .rightComposition, .item-center {
+	    font-size: 5px;
+	}
+
+	.leftComposition .item h4, .rightComposition .item h4, .item-center h4 {
+	    font-size: 5px;
+	}
+
+	.progressBar__share h4{
+		width: 75%;
+	}
+
+	.procent {
+	    margin-left: 10px;
+	}
+
+	.information {
+	    font-size: 5px;
+	    top: 4%;
+	    right: 13%;
+	}
+
+	.information span {
+	    font-size: 6px;
+	}
+
+	.howtouse {
+	    font-size: 5px;
+	}
+
+	.team {
+	    margin-right: 10px;
+	    font-size: 5px;
+	}
+
+	.wow, .product-origin, .buyoriginal p {
+	    font-size: 5px;
+	}
+	
+	.node{
+		width: 45%;
+	}
+	.node-txt {
+    	padding-left: 5px;
+    	font-size: 3px;
+    }
+
+    .attention {
+	    font-size: 4px;
+	}
+
+	.recommend {
+    	font-size: 6px;
+	}
+
+	.briefing, .briefing2, .briefing3, .briefing4 {
+	    font-size: 3px;
+	}
+
+	.briefing, .briefing2{
+		right: 17%;
+	}
+
+	.best-megaspray img {
+	    margin-top: -29px;
+	}
+
+	.cosmetics-certificate{
+		width: 75%;
+		top: 30%;
+	}
+
+	.about-megaspray {
+	    margin-top: 33px;
+	}
+
+	.about-megaspray h1 {
+	    font-size: 10px;
+	}
+
+	.about-megaspray p {
+	    margin-top: -28px;
+	    font-size: 5px;
+	}
+	.progressBar__share .progress90, .progress95, .progress97{
+		background-position-y: -108px;
+	}
+
+	.progressBar__description {
+    	width: 100%;
+    }
+
+    .progressBar__share h4 {
+	    width: 100%;
+	    padding-top: 23px;
+	}
+
+	.product {
+	    font-size: 6px;
+	}
+
+	.original {
+    	top: 48%;
+	}
+
+	.best p {
+	    font-size: 7px;
+	}
+
+	.newinfo span{
+		width: 60%;
+	}
+
+	.newinfo{
+		font-size: 9px;
+	}
+
+	.lucky-people{
+		display: table;
+		margin: auto;
+		width: 100%;
+	}
+
+	.lucky-people h4, .lucky-people p {
+	    font-size: 15px;
+	    margin-top: 10px;
+	}
+
+	.stock{
+		margin-top: 30px;
+	}
+
+	.form {
+	    right: 0%;
+	    left: 0;
+	    top: -18%;
+	    width: 100%;
+
+	}
+
+	.buyNow .number {
+	    top: 70%;
+	}
+
+	.button {
+	    width: 373px;
+	    height: 105px;
+	    background-position-x: 26px;
+	    background-position-y: -99px;
+	}
+
+	.button:active {
+	    background-position-y: 10px;
+	}
+}
+
